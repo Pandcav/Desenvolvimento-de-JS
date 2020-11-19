@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apendendo DOM</title>
+    <style>
+        body {
+            background-color: #5573dd;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg" name="msg" class="msg">Click em mim</div>
+</body> 
+
+<script>
+    //selecionado objeto por Marca(tag)\\
+    /*var corpo = window.document.body
+    corpo.style.background = 'red'
+    var p1= window.document.getElementsByTagName('p')[1]
+    window.document.write(p1.innerHTML)
+    p1.style.color ='blue'
+    window.alert(p1.innerText)*/
+
+    //selecionado obijeto por ID\\
+    /*var d = window.document.getElementById('msg')
+    d.style.background ="green"
+    d.innerText= 'Carregando...'*/
+
+    //selecionado objeto por Nome\\
+    /*var d = window.document.getElementsByName('msg')[0]
+    d.innerText ='ola'*/
+
+    //selecionado objeto por Classe\\
+    /*var clas = window.document.getElementsByClassName('msg')[0]
+    clas.innerText = 'copilado'*/
+
+    //selecionado oobijeto por Seletor\\
+    var selec = window.document.querySelector('div#msg')
+    selec.style.background = "blue"
+    selec.style.color = "yellow"
+</script>
+
+</html>

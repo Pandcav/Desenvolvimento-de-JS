@@ -1,0 +1,120 @@
+body {
+    font: normal 15pt Arial;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: plum;
+}
+
+header {
+    color: white;
+    text-align: center;
+    background-image: url('../../img/tlu1.jpg');
+    width: 100%;
+    height: 80%;
+}
+
+
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: 800;
+}
+#cardnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+}
+.cardsid {
+    color: white;
+    background-color: rgb(17, 17, 17);
+    display: block;
+    position: fixed;
+    justify-content: right;
+    height: 100%;
+    width: 0;
+    transition: all 2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    opacity: 0.8;
+}
+.carde {
+    background-color: rgb(238, 108, 238);
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    opacity: 0.8;
+}
+.carddrop {
+    background-color: rgb(17, 17, 17);
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    transition: all 2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    margin-left: 74.4%;
+    opacity: 0.8;
+}
+#fundo {
+    width: 100%;
+    background-color: dimgray;
+}
+.bton {
+    text-align: center;
+    height: 100%;
+    width: 70px;
+    border: 0;
+    padding: 0;
+    margin: 3px;
+    color: rgb(238, 108, 238);
+    padding-top: 15px;
+    font: normal 15pt arial;
+    font-weight: bold;
+}
+.foo {
+    writing-mode: vertical-rl;
+}
+.txt {
+    color: black;
+    text-align: center;
+    margin: 0;
+    writing-mode: vertical-rl;
+    font: normal 35pt italic;
+    width: 50px;
+}
+.txt1 {
+    color: rgba(255, 0, 255, 0.774);
+    text-align: center;
+    margin: 0;
+    font: normal 40pt Italic;
+    width: 100%;
+    font-weight: bold;
+}
+.txtcenter {
+    text-align: center;
+}
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 100%;
+    -webkit-transition: margin-left 500ms ease-in;
+    -moz-transition: margin-left 500ms ease-in;
+    -o-transition: margin-left 500ms ease-in;
+    transition: margin-left 500ms ease-in;
+}
+#container {
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    height: 200px;
+}
+.ativa {
+    margin-left: 0%;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #889;
+            font: normal 22pt oblique;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        var nome = window.prompt("Qual é seu nome?")
+        document.write(`Ola, <strong>${nome}</strong>!!. Você sabia que seu nome tem ${nome.length} letras? `)
+        document.writeln(`Seu nome em maiúsculo fica <strong>${nome.toUpperCase()}</strong> <br>`)
+        document.writeln(`E em minuculo fica <strong>${nome.toLowerCase()}</strong>`)
+
+        /*formatando number
+        var n1= 1543.5
+        n1.toFixed(2)  = formata com duas casas decimais 
+        n1.toLocaleString('pt-BR,{style:'currency', currency:'BRL'})
+
+        */
+    </script>
+
+
+</body>
+
+</html>

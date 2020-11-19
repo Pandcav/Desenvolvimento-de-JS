@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>começando Java Script</title>
+    <style>
+        body {
+            background-color: #240131;
+        }
+        
+        h1 {
+            color: darkgrey;
+            font-style: initial;
+        }
+        
+        p {
+            color: #000;
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <grid>
+        <contet>
+            <h1> Ola, Mundo</h1>
+
+            <p>Estou livre da maldição!!</p>
+        </contet>
+
+    </grid>
+
+
+    <script>
+        // convertendo string para number (3 formas )
+
+        //primeiro meio e sugundo meio: converte antes de receber os dados\\
+        /*Number.parseInt ou Number.parseFloat serven para converter a string em number.
+        a diferença é que Number.parseInt converte para numeros inteiroe ex: 1, 2, 3
+        e Number.parseFloat converte para numeros reais ex: 1.5, 7.3, 11.2 */
+        var n1 = Number.parseInt(window.prompt("digite o primeiro numero"))
+        var n2 = Number.parseInt(window.prompt("digite o segundo numero"))
+        var s = n1 + n2
+        window.alert('a soma é, ' + s)
+
+        //terceiro meio: converte antes de receber os dados\\
+        /*Number() essa sintaxe faz com que o proprio JavaScript converta o numero em real ou inteiro 
+        depende da forma que o dado for entrar*/
+        var n1 = Number(window.prompt("digite o primeiro numero"))
+        var n2 = Number(window.prompt("digite o segundo numero"))
+        var s = n1 + n2
+        window.alert('a soma é, ' + s)
+
+        /* podemos converte tambem de numero para string.
+        Simples basta por: String(e o valor recebido) ou podemos tambem por: ovalorrecebido.toString()
+        */
+        var n1 = Number(window.prompt("digite o primeiro numero"))
+        var n2 = Number(window.prompt("digite o segundo numero"))
+        var s = n1 + n2
+        window.alert('a soma é, ' + s.toString())
+
+        //////////ou\\\\\\\\\\
+
+        var n1 = Number(window.prompt("digite o primeiro numero"))
+        var n2 = Number(window.prompt("digite o segundo numero"))
+        var s = n1 + n2
+        window.alert('a soma é, ' + String(s))
+
+
+        /* usando o PlaceHolder (`texto aleatorio${nome da variavel}`)
+            PlaceHolder serve para concatenar novidade no EcmeScript
+        */
+        var n1 = Number(window.prompt("digite o primeiro numero"))
+        var n2 = Number(window.prompt("digite o segundo numero"))
+        var s = n1 + n2
+        window.alert(`a soma do ${n1} mais  ${n2} é igual a ${s}`)
+
+
+        /* formatendo string 
+        var s = JavaScript
+
+        ' estou aprendendo JavaScript s' = não faz interpolação 
+        ' estou aprendendo JavaScript' + s = usa a concatenação
+        `estou aprendendo JavaScript ${s}` = usa template string 
+
+        s.length            // quantas caracteres a  string tem 
+        s.toUpperCase()    // tudo para 'MAIÚSCULAS'
+        s.toLowerCase()   // tudo para 'minusculas' 
+        */
+    </script>
+
+</body>
+
+
+
+</html>

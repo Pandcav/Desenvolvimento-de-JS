@@ -1,0 +1,39 @@
+Operadores Relacional no JavaScript
+
+
+                5 > 2     -> maior        -> true 
+                7 < 4     -> menor        -> false
+                8 >= 8    -> maior igual  ->true
+                9 <= 7    -> menor igual  ->false 
+                5 == 5    -> igual        ->true
+                4 != 4    -> diferente    ->false
+                5 === '5' -> identico     ->false
+
+operadores logicos 
+
+                "!"   -> Negação - operador unario só opera com um valor logico
+                "&&"  -> Conjunção - operador binario opera com dois valor logico
+                "||"  -> Disjunção  - operador binario opera com dois valor logico
+
+exemplo de "&&" e "||" 
+
+true  "&&"  true ->"true"               true  "||"  true ->"true"       
+true  "&&" false -> "false"             true  "||"  false ->"true" 
+false "&&" true  -> "false"             false "||"  true ->"true"   
+false "&&" false ->"false"              false "||"  true ->"false"
+
+ordem de operadoreslogicos
+1º "!"
+2º "&&"
+3º "||"
+
+ordem de operadores
+ 1º operadores Aritimeticos 
+ 2º operadores Relacional
+ 3º operadores Logicos
+
+Operadores Ternario
+
+
+                "?" se 
+                ":" se não 
